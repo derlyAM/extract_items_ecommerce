@@ -1,0 +1,28 @@
+{
+  "name": "node_scra",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^1.8.0",
+    "@mozilla/readability": "^0.6.0",
+    "2captcha": "^3.0.5-2",
+    "express": "^5.1.0",
+    "jsdom": "^26.1.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "openai": "^5.8.2",
+    "puppeteer": "^24.11.2",
+    "puppeteer-cluster": "^0.24.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-recaptcha": "^3.6.8",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "turndown": "^7.2.0"
+  }
+}

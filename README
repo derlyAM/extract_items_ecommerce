@@ -1,0 +1,28 @@
+
+## Proceso:
+se debera ejecutar primero el script para extraer la información de alguno de los dos sitios
+probados ese guardara los items encontrados y guardara un html en la carpeta "resonse_HTML",
+posterior a tener el html extraido con la información se debera ejecutar el script
+que procesa la información y la convierte en json, este json se guardara en la carpeta "data"
+a continuación de da un ejemplo de como ejecutar cada uno de los scripts:
+
+#### Para buscar en alguna de las dos paginas ejecuta:
+##### Mercado Libre
+node test.js https://www.mercadolibre.com.co <nombre del producto>
+ejemplo:
+node test.js https://www.mercadolibre.com.co "balon de futbol"
+
+##### Shein
+node test.js https://www.shein.com.co <nombre del producto>
+ejemplo:
+node test.js https://www.shein.com.co "gafas de sol"
+
+#### Para procesar el html extraido y obtener lo itmes en formato json
+Debes indicar el archivo HTML a procesar.
+   Uso: node process_html.js <archivo.html> <nombre_clase_card>
+
+ejemplo:
+node process_html.js "raw_cards_balos de futbol_1751847442701.html" ui-search-layout__item
+
+node process_html.js raw_cards_gafas_de_sol_1751848675966.html product-card
+

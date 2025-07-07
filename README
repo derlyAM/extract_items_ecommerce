@@ -1,5 +1,40 @@
 
-## Proceso:
+
+## Instalación rápida
+
+> Estos pasos asumen macOS / Linux; en Windows basta con los mismos comandos dentro de PowerShell.  
+
+1. **Instala Node 19**  o versión posterior, este proyecto fue realizado en la versión (v23.7.0)
+   * Recomendado con [nvm](https://github.com/nvm-sh/nvm):  
+     ```bash
+     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+     nvm install 19
+     nvm use 1
+     ```  
+   * O descarga el instalador desde <https://nodejs.org/en>.
+
+2. **Clona este repositorio**  
+   ```bash
+   https://github.com/derlyAM/extract_items_ecommerce.git
+   ```
+
+3. **Instala las dependencias del proyecto**  
+   ```bash
+   npm ci          # usa package-lock para reproducir versiones exactas
+   ```
+
+4. **Configura la clave de OpenAI**  que se encuentra al final del documento tecnico
+
+5. **Estructura de carpetas**  
+   Tras la primera ejecución se crearán automáticamente:  
+   ```
+   response_HTML/   # HTML crudo de tarjetas
+   data/            # JSON procesados
+   ```
+
+
+## Uso de los scripts:
+
 se debera ejecutar primero el script para extraer la información de alguno de los dos sitios
 probados ese guardara los items encontrados y guardara un html en la carpeta "resonse_HTML",
 posterior a tener el html extraido con la información se debera ejecutar el script

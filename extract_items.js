@@ -5,7 +5,7 @@ import fs from 'fs';          // para guardar Markdown
 puppeteer.use(StealthPlugin());
 
 // --- Leer parámetros de la línea de comandos ---
-// Uso: node test.js <BASE_URL> <término de búsqueda...>
+// Uso: node extract_items.js <BASE_URL> <término de búsqueda...>
 const BASE_URL   = process.argv[2];                // p. ej. https://www.mercadolibre.com.co
 const SEARCH_TERM = process.argv.slice(3).join(' '); // permite términos con espacios
 
